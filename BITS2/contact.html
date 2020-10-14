@@ -1,0 +1,98 @@
+
+
+
+     
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    
+
+    
+
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">One Minute Meditation</h3>
+            <nav class="nav-masthead">
+              <a href="index.html">HOME</a>
+             
+            </nav>
+          </div>
+        </div>
+  
+        <div class="inner cover">
+          <input id="page1" type="radio" name="screens" checked>
+          <section class="screen">
+            <h1 class="cover-heading">Clear your mind</h1>
+            <p class="lead">lets meditate for one minute start by clearing your mind of any thoughts</p>
+            <p class="lead">
+              <button id="startBtn" class="btn btn-lg btn-secondary" onclick="onTimer(), playSound();">Start Meditation</button>
+            </p>
+            <div id="timer">00</div>
+            <audio id="audio" src="https://www.soundjay.com/drinks/glass-clink-3.wav" autostart="false"></audio>
+            <h2 class="lead">
+          </h2>
+            <p>
+      
+  
+        
+  
+        </div>
+  
+      
+  
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <script>
+  i = 60;
+var time = "";
+
+function onTimer() {
+  document.getElementById('timer').innerHTML = i;
+  i--;
+  
+  if (i < 0) {
+    document.getElementById("audio").play();
+    alert('Thanks for meditating with me!');
+    return i = 60;
+  }
+  
+  else if (i < 10) {
+    i = '0' + i;
+    time = setTimeout(onTimer, 1000);
+  }
+  
+  else {
+    time = setTimeout(onTimer, 1000);
+  }
+}
+
+function playSound() {
+  var sound = document.getElementById("audio");
+    sound.play();
+}
+
+function pauseTimer() {
+  clearTimeout(time);
+}
+
+function stopTimer() {
+  clearTimeout(time);
+  i = 60;
+  document.getElementById('timer').innerHTML = "60";
+}
+</script>
+</head>
+</html>

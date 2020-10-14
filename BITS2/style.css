@@ -1,0 +1,523 @@
+.head {
+    
+    font-weight: 900;
+    font-style: italic;
+}
+body {
+
+    
+    align-content: center;
+    
+    font-family: 'Lato', sans-serif;
+}
+.container {
+
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    
+}
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding : 1px;
+}
+.right-side {
+    color: black;
+    size: 20px;
+}
+
+.left-side {
+    display: flex;
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 21px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.left-side {
+    height: 23px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.left-side a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.left-side a:hover {
+    border-bottom: 1px solid black;
+    color: black;
+
+}
+.items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item-wrapper {
+    position: relative;
+}
+.item-image :hover {
+    text-emphasis-color: 3;
+}
+.item-image {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+.caption:hover {
+    font-weight: 700;
+    color: cyan;
+    transition: 1s;
+}
+.backdark {
+    transition: 1s;
+    filter: brightness(10%);
+
+}
+.head {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+.right-foot {
+    display: flex;
+    justify-content: right;
+}
+.img-text a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s; 
+}
+
+.container-1 {
+    padding: 16px;
+  }
+  
+  
+  input[type=text], input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  hr {
+    border: 1px solid white;
+    margin-bottom: 25px;
+  }
+  
+  
+  .registerbtn {
+    background-color: red;
+    color: white;
+    padding: 17px 21px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    opacity: 0.95;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  
+  a {
+    color: dodgerblue;
+  }
+  
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  .registerbutton {
+    background-color: red;
+    color: white;
+    padding: 17px 21px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.95;
+  }
+
+  .contact-main {
+      display: flexbox;
+      justify-content: center;
+      
+  }
+  .videos {
+     
+      
+     
+      background-color: lightgray;
+  }
+  .medmain {
+      padding: 20px;
+      margin: 20px;
+      font-size: xx-large;
+      font-stretch: wider;
+      text-align: center;
+      text-decoration-color: dodgerblue;
+      text-transform: capitalize;
+      text-decoration-style: double;
+      text-decoration: solid;
+      background-color: lightblue;
+  }
+
+  .medall {
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    border: solid black 2px;
+  }
+  
+  .images-final {
+      border: solid black 2px;
+      padding: 20px;
+      margin: 20px;
+      background-color:lightblue;
+      
+      justify-content: left;
+      align-items: flex-start;
+      align-content: center;
+      justify-items: normal;
+
+  }
+
+  .medsec {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 20px;
+      margin-inline: 20px;
+      border: solid black 2px;
+      background-color: whitesmoke;
+  }
+
+  .explanation {
+      justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    border: solid black 2px;
+  }
+
+  .aboutall {
+    justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    border: solid black 2px;
+
+  }
+
+  .dailyreminder {
+    justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    border: solid black 2px;
+  }
+
+  .dailycheck {
+    justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    border: solid black 2px;  
+  }
+
+  .head {
+    margin-top: 0px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: rgba(106, 106, 106,0.76);
+    color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+      z-index: 2;
+  }
+
+  .returnhome a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-size-adjust: 20;
+    position: relative;
+    top: 30px;
+  }
+
+  .returnhome a:hover {
+    color: red;
+  }
+
+  .element.style {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    border: none;
+}
+
+
+
+
+.btn-secondary {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #618587;
+  border: .05rem solid #618587;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; 
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+.media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
+
+/*
+ * Slides
+ */
+input[name="screens"] {
+  display: none;
+}
+
+section.screen {
+  display: none;
+}
+
+input[name="screens"]:checked+section.screen {
+  display: block;
+}
+
+
+
+/*
+ * Timer
+ */
+#timer {
+  font-size: 2rem;
+}
+
+.container signin a {
+  color: red;
+
+}
+
+.explan {
+  padding: 10px;
+  margin: 25px;
+  justify-content: left;
+  text-align: left;
+  font-size: larger;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+  border: solid white 1px;
+}
+
+.super a {
+  position: relative;
+  left: 650px;
+  padding: 10px;
+  text-decoration: none;
+  font: larger;
+  color: white;
+  border-bottom: solid transparent;
+  transition: 0.5s;
+}
+
+.super a:hover {
+  color: white;
+  transition: 0.5s;
+  border bottom: 1px solid white;
+  
+}
+
+
+
+  
+
+  
+ 
